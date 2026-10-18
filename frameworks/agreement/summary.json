@@ -1,0 +1,32 @@
+{
+ "n_tests": 541,
+ "agents": [
+  "reference",
+  "M01_retrieval_top1",
+  "M02_no_lexicon",
+  "M03_no_spellfix",
+  "M04_case_sensitive",
+  "M05_guard_off",
+  "M06_guard_no_decode",
+  "M07_pii_disclose",
+  "M08_redact_off",
+  "M09_no_abstain",
+  "M10_follow_injection",
+  "M11_truncate_context",
+  "M12_calc_operand_order",
+  "M13_crash_empty",
+  "M14_crash_long",
+  "M15_compare_first"
+ ],
+ "harness_mutation_score": 1.0,
+ "frameworks": {
+  "inspect": {
+   "pairs_expected": 8656,
+   "pairs_with_verdict": 8656,
+   "agreeing": 8656,
+   "agreement_rate": 1.0,
+   "mutation_score": 1.0,
+   "disagreements_first_20": []
+  }
+ }
+}

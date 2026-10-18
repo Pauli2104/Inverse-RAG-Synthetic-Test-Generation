@@ -1,0 +1,114 @@
+\begin{table*}[!t]
+\caption{Fault-level hypothesis tests at $N=100$. The unit of analysis is the fault; the response is its detection probability over 30 resampled suites. Omnibus: Friedman test across the six suites with Kendall's $W$. Post hoc: S2 against each other suite, two-sided Wilcoxon signed-rank test (Pratt) with Holm adjustment over the five comparisons; $\Delta$: mean difference in detection probability, with its 95\% bootstrap interval over faults on the line below; $r$: matched-pairs rank-biserial correlation. MDE: smallest S2$-$S1 difference detectable with 80\% power at $\alpha=0.05$ for this number of faults}
+\label{tab:stats}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccccccccc@{}}
+\toprule
+ & \multicolumn{3}{c}{Design faults M ($n=15$)} & \multicolumn{3}{c}{Held-out faults H ($n=12$)} & \multicolumn{3}{c}{Code mutants A$^{*}$ ($n=312$)} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(l){8-10}
+Test & $\Delta$ & $r$ & $p_{\mathrm{Holm}}$ & $\Delta$ & $r$ & $p_{\mathrm{Holm}}$ & $\Delta$ & $r$ & $p_{\mathrm{Holm}}$ \\
+\midrule
+Omnibus (Friedman) & \multicolumn{3}{c}{$\chi^2=35.8$, $p<.001$, $W=.48$} & \multicolumn{3}{c}{$\chi^2=21.2$, $p<.001$, $W=.35$} & \multicolumn{3}{c}{$\chi^2=701.1$, $p<.001$, $W=.45$} \\
+Mean rank of S2 (of 6) & \multicolumn{3}{c}{5.20} & \multicolumn{3}{c}{4.42} & \multicolumn{3}{c}{4.36} \\
+\midrule
+S2 vs S0 & $+$.80 & 1.00 & .003 & $+$.28 & 1.00 & .250 & $+$.29 & .98 & $<$.001 \\
+ & {\scriptsize[.60, .97]} & & & {\scriptsize[.08, .50]} & & & {\scriptsize[.25, .34]} & & \\
+S2 vs S1 & $+$.64 & .89 & .013 & $+$.07 & .40 & .750 & $+$.17 & .83 & $<$.001 \\
+ & {\scriptsize[.38, .86]} & & & {\scriptsize[$-$.10, .30]} & & & {\scriptsize[.13, .21]} & & \\
+S2 vs BR & $+$.53 & .91 & .022 & $+$.16 & 1.00 & .375 & $+$.16 & .90 & $<$.001 \\
+ & {\scriptsize[.29, .77]} & & & {\scriptsize[.02, .35]} & & & {\scriptsize[.12, .19]} & & \\
+S2 vs BP & $+$.93 & 1.00 & .002 & $+$.61 & .77 & .073 & $+$.76 & 1.00 & $<$.001 \\
+ & {\scriptsize[.82, 1.00]} & & & {\scriptsize[.25, .90]} & & & {\scriptsize[.71, .80]} & & \\
+S2 vs BRP & $+$.53 & .91 & .022 & $+$.09 & .52 & .375 & $+$.14 & .91 & $<$.001 \\
+ & {\scriptsize[.29, .77]} & & & {\scriptsize[$-$.15, .32]} & & & {\scriptsize[.11, .18]} & & \\
+\midrule
+MDE, S2 vs S1 & \multicolumn{3}{c}{.39} & \multicolumn{3}{c}{.33} & \multicolumn{3}{c}{.06} \\
+\botrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[!t]
+\caption{Sensitivity of the post hoc conclusions to analytic choices. Cells: mean difference in detection probability (adjusted $p$) for S2 against S1 and against BRP; only one choice is changed per row. Holm: Holm adjustment over the five comparisons with S2 unless stated. Budget rows are Holm-adjusted over the three comparisons with S1, BR and BRP. McNemar row: faults detected only by S2 : only by the other suite. Leave-one-out: range of $\Delta$ and largest unadjusted $p$ over the $n$ reduced fault sets. Fragility: number of faults most favourable to S2 that must be removed before $p\geq.05$. Rows for alternative mutant sets give unadjusted $p$; ``all viable mutants'' includes mutants that no test kills. --: not applicable}
+\label{tab:sens}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}lcccccc@{}}
+\toprule
+ & \multicolumn{2}{c}{Design faults M} & \multicolumn{2}{c}{Held-out faults H} & \multicolumn{2}{c}{Code mutants A$^{*}$} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(l){6-7}
+Analysis & vs S1 & vs BRP & vs S1 & vs BRP & vs S1 & vs BRP \\
+\midrule
+Main: Wilcoxon, Holm & .64 (.013) & .53 (.022) & .07 (.750) & .09 (.375) & .17 ($<$.001) & .14 ($<$.001) \\
+Budget $N=25$ & .48 (.010) & .32 (.028) & .04 (.680) & .07 (.117) & .11 ($<$.001) & .09 ($<$.001) \\
+Budget $N=50$ & .59 (.012) & .46 (.031) & .07 (.750) & .09 (.141) & .15 ($<$.001) & .13 ($<$.001) \\
+Paired $t$-test, Holm & .64 ($<$.001) & .53 (.002) & .07 (.988) & .09 (.988) & .17 ($<$.001) & .14 ($<$.001) \\
+Bonferroni & .64 (.022) & .53 (.054) & .07 (1) & .09 (.938) & .17 ($<$.001) & .14 ($<$.001) \\
+Benjamini--Hochberg & .64 (.007) & .53 (.011) & .07 (.750) & .09 (.234) & .17 ($<$.001) & .14 ($<$.001) \\
+All 15 pairs, Holm & .64 (.057) & .53 (.130) & .07 (1) & .09 (1) & .17 ($<$.001) & .14 ($<$.001) \\
+Detected yes/no (McNemar) & 10\,:\,0 (.006) & 8\,:\,0 (.016) & 2\,:\,2 (1) & 2\,:\,1 (1) & 59\,:\,6 ($<$.001) & 46\,:\,0 ($<$.001) \\
+Leave one fault out & .61--.69 (.008) & .50--.57 (.019) & $-$.01--.12 (1) & .01--.18 (.375) & -- & -- \\
+Fragility (faults) & 5 & 3 & -- & -- & -- & -- \\
+\midrule
+A$^{*}$, threshold $\tau=0.5$ ($n=199$) & \multicolumn{4}{c}{} & .26 ($<$.001) & .23 ($<$.001) \\
+A$^{*}$, no triviality filter ($n=316$) & \multicolumn{4}{c}{} & .17 ($<$.001) & .14 ($<$.001) \\
+All viable mutants A ($n=572$) & \multicolumn{4}{c}{} & .09 ($<$.001) & .08 ($<$.001) \\
+A$^{*}$ averaged per function ($n=11$) & \multicolumn{4}{c}{} & .09 (.141) & .14 (.180) \\
+\midrule
+Resample as unit (Friedman) & \multicolumn{2}{c}{$\chi^2=150$, $W=1.00$} & \multicolumn{2}{c}{$\chi^2=134$, $W=.90$} & \multicolumn{2}{c}{$\chi^2=143$, $W=.95$} \\
+\botrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[!t]
+\caption{LLM-agent study: faults detected out of 12 with Wilson 95\% intervals, and exact McNemar tests of S2-LLM against each suite (faults detected only by S2-LLM : only by the other suite; Holm over six comparisons). Main rule: a fault counts as detected if a valid test fails in both runs; lenient rule: in at least one run. $^{n}$: generated natively by the tool}
+\label{tab:llmstats}
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+ & \multicolumn{3}{c}{Main rule} & \multicolumn{2}{c}{Lenient rule} \\
+\cmidrule(lr){2-4}\cmidrule(l){5-6}
+Suite & Det.\ [95\% CI] & b\,:\,c & $p_{\mathrm{Holm}}$ & Det. & $p_{\mathrm{Holm}}$ \\
+\midrule
+S0 & 4 [.14, .61] & 4\,:\,0 & .500 & 5 & .500 \\
+S1 & 4 [.14, .61] & 4\,:\,0 & .500 & 5 & .500 \\
+S2 & 5 [.19, .68] & 3\,:\,0 & .500 & 8 & 1 \\
+S2-LLM & 8 [.39, .86] & -- & -- & 9 & -- \\
+BRP & 4 [.14, .61] & 4\,:\,0 & .500 & 6 & .500 \\
+garak+PyRIT$^{n}$ & 0 [.00, .24] & 8\,:\,0 & .047 & 0 & .023 \\
+Ragas$^{n}$ & 2 [.05, .45] & 6\,:\,0 & .156 & 2 & .078 \\
+\midrule
+Cochran's $Q$, 7 suites & \multicolumn{3}{c}{$Q(6)=22.1$, $p=.001$} & \multicolumn{2}{c}{$Q=24.7$, $p<.001$} \\
+Cochran's $Q$, 5 pipeline suites & \multicolumn{3}{c}{$Q(4)=8.6$, $p=.073$} & \multicolumn{2}{c}{$Q=6.0$, $p=.199$} \\
+\botrule
+\end{tabular}
+\end{table*}
+
+\begin{table}[t]
+\caption{All pairwise post hoc comparisons at $N=100$ (fault level; mean difference row minus column suite, Wilcoxon signed-rank test, Holm over 15 comparisons within each fault set)}
+\label{tab:pairs}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Pair & M ($n=15$) & H ($n=12$) & A$^{*}$ ($n=312$) \\
+\midrule
+S0 -- S1 & $-$.16 (.419) & $-$.21 (1) & $-$.13 ($<$.001) \\
+S0 -- BR & $-$.27 (.319) & $-$.12 (1) & $-$.14 ($<$.001) \\
+S0 -- BP & .13 (.629) & .33 (1) & .46 ($<$.001) \\
+S0 -- BRP & $-$.27 (.319) & $-$.19 (1) & $-$.15 ($<$.001) \\
+S0 -- S2 & $-$.80 (.010) & $-$.28 (.688) & $-$.29 ($<$.001) \\
+S1 -- BR & $-$.11 (1) & .09 (1) & $-$.01 (.987) \\
+S1 -- BP & .29 (.208) & .54 (.559) & .59 ($<$.001) \\
+S1 -- BRP & $-$.11 (1) & .02 (1) & $-$.02 (.987) \\
+S1 -- S2 & $-$.64 (.057) & $-$.07 (1) & $-$.17 ($<$.001) \\
+BR -- BP & .40 (.143) & .45 (.559) & .60 ($<$.001) \\
+BR -- BRP & .00 (1) & $-$.07 (1) & $-$.01 (.987) \\
+BR -- S2 & $-$.53 (.130) & $-$.16 (1) & $-$.16 ($<$.001) \\
+BP -- BRP & $-$.40 (.143) & $-$.52 (.117) & $-$.61 ($<$.001) \\
+BP -- S2 & $-$.93 (.006) & $-$.61 (.205) & $-$.76 ($<$.001) \\
+BRP -- S2 & $-$.53 (.130) & $-$.09 (1) & $-$.14 ($<$.001) \\
+\botrule
+\end{tabular}
+\end{table}

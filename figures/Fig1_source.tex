@@ -1,0 +1,23 @@
+\documentclass[border=2pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, fit, backgrounds}
+\begin{document}
+\footnotesize
+\begin{tikzpicture}[
+		box/.style={draw=black!70, rounded corners=2pt, align=center, minimum height=11mm, text width=25mm, font=\footnotesize, fill=white},
+		arr/.style={-{Stealth[length=2mm]}, thick, black!70},
+		lab/.style={font=\scriptsize\itshape, text=black!60}]
+		\node[box] (kb) {\textbf{Knowledge base}\\ manuals, policies,\\ directory (protected)};
+		\node[box, right=5mm of kb] (cs) {\textbf{Context sampler}\\ chunking; coverage-\\stratified (type$\times$site)};
+		\node[box, right=5mm of cs] (gen) {\textbf{Generator agent}\\ teacher + 5 personas\\ single/multi-hop};
+		\node[box, right=5mm of gen] (aug) {\textbf{Augmentation}\\ linguistic $\cdot$ edge $\cdot$\\ adversarial $\cdot$ privacy};
+		\node[box, below=12mm of aug] (cr) {\textbf{Critic / filter}\\ schema, claim re-derivation,\\ answerability, dedup};
+		\node[box, left=5mm of cr] (ds) {\textbf{Test registry}\\ JSONL/Parquet with\\ executable assertions};
+		\node[box, left=5mm of ds] (fw) {\textbf{Framework export}\\ promptfoo, Inspect AI,\\ DeepEval, Ragas, PyRIT};
+		\node[box, left=5mm of fw, fill=black!4] (sut) {\textbf{Agent under test}\\ reference + 15 mutants\\ $\rightarrow$ mutation score};
+		\draw[arr] (kb) -- (cs); \draw[arr] (cs) -- (gen); \draw[arr] (gen) -- (aug);
+		\draw[arr] (aug) -- (cr); \draw[arr] (cr) -- (ds); \draw[arr] (ds) -- (fw); \draw[arr] (fw) -- (sut);
+		\draw[arr, dashed] (sut.north) -- node[lab, fill=white, inner sep=1pt]{failures $\rightarrow$ amplified seeds} (kb.south);
+	\end{tikzpicture}
+\end{document}

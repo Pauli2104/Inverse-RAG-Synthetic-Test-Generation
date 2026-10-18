@@ -1,0 +1,282 @@
+{
+ "facts": {
+  "Atlas|Hall A18|setpoint": "21.0",
+  "Atlas|Hall A18|occupancy": "80",
+  "Atlas|Hall A18|access": "amber",
+  "Atlas|Hall A18|co2": "800",
+  "Atlas|Lab A41|setpoint": "22.0",
+  "Atlas|Lab A41|occupancy": "76",
+  "Atlas|Lab A41|access": "green",
+  "Atlas|Lab A41|co2": "800",
+  "Atlas|Studio A19|setpoint": "23.5",
+  "Atlas|Studio A19|occupancy": "36",
+  "Atlas|Studio A19|access": "amber",
+  "Atlas|Studio A19|co2": "1100",
+  "Atlas|Lounge A19|setpoint": "22.5",
+  "Atlas|Lounge A19|occupancy": "112",
+  "Atlas|Lounge A19|access": "amber",
+  "Atlas|Lounge A19|co2": "1200",
+  "Atlas|elevator|maintenance": "Friday from 22:00 to 24:00",
+  "Atlas|elevator|escalation": "facility manager",
+  "Atlas|fire alarm|maintenance": "Thursday from 22:00 to 24:00",
+  "Atlas|fire alarm|escalation": "security desk",
+  "Atlas|HVAC|maintenance": "Friday from 20:00 to 22:00",
+  "Atlas|HVAC|escalation": "security desk",
+  "Borealis|Lounge B14|setpoint": "24.0",
+  "Borealis|Lounge B14|occupancy": "92",
+  "Borealis|Lounge B14|access": "green",
+  "Borealis|Lounge B14|co2": "1400",
+  "Borealis|Hall B44|setpoint": "23.5",
+  "Borealis|Hall B44|occupancy": "52",
+  "Borealis|Hall B44|access": "black",
+  "Borealis|Hall B44|co2": "900",
+  "Borealis|Studio B17|setpoint": "20.5",
+  "Borealis|Studio B17|occupancy": "104",
+  "Borealis|Studio B17|access": "amber",
+  "Borealis|Studio B17|co2": "900",
+  "Borealis|Lab B47|setpoint": "21.0",
+  "Borealis|Lab B47|occupancy": "64",
+  "Borealis|Lab B47|access": "red",
+  "Borealis|Lab B47|co2": "1100",
+  "Borealis|fire alarm|maintenance": "Saturday from 20:00 to 22:00",
+  "Borealis|fire alarm|escalation": "duty engineer",
+  "Borealis|lighting|maintenance": "Tuesday from 07:00 to 09:00",
+  "Borealis|lighting|escalation": "duty engineer",
+  "Borealis|elevator|maintenance": "Thursday from 21:00 to 23:00",
+  "Borealis|elevator|escalation": "security desk",
+  "Cygnus|Lab C15|setpoint": "20.5",
+  "Cygnus|Lab C15|occupancy": "116",
+  "Cygnus|Lab C15|access": "black",
+  "Cygnus|Lab C15|co2": "1400",
+  "Cygnus|Lounge C39|setpoint": "23.0",
+  "Cygnus|Lounge C39|occupancy": "20",
+  "Cygnus|Lounge C39|access": "black",
+  "Cygnus|Lounge C39|co2": "1100",
+  "Cygnus|Hall C31|setpoint": "21.5",
+  "Cygnus|Hall C31|occupancy": "100",
+  "Cygnus|Hall C31|access": "red",
+  "Cygnus|Hall C31|co2": "1400",
+  "Cygnus|Studio C13|setpoint": "23.0",
+  "Cygnus|Studio C13|occupancy": "96",
+  "Cygnus|Studio C13|access": "green",
+  "Cygnus|Studio C13|co2": "1000",
+  "Cygnus|HVAC|maintenance": "Wednesday from 07:00 to 09:00",
+  "Cygnus|HVAC|escalation": "duty engineer",
+  "Cygnus|fire alarm|maintenance": "Saturday from 07:00 to 09:00",
+  "Cygnus|fire alarm|escalation": "duty engineer",
+  "Cygnus|lighting|maintenance": "Saturday from 07:00 to 09:00",
+  "Cygnus|lighting|escalation": "IT operations lead",
+  "Dorado|Lounge D26|setpoint": "23.0",
+  "Dorado|Lounge D26|occupancy": "108",
+  "Dorado|Lounge D26|access": "black",
+  "Dorado|Lounge D26|co2": "1100",
+  "Dorado|Hall D12|setpoint": "21.5",
+  "Dorado|Hall D12|occupancy": "8",
+  "Dorado|Hall D12|access": "black",
+  "Dorado|Hall D12|co2": "900",
+  "Dorado|Lab D45|setpoint": "21.5",
+  "Dorado|Lab D45|occupancy": "76",
+  "Dorado|Lab D45|access": "green",
+  "Dorado|Lab D45|co2": "1400",
+  "Dorado|Studio D18|setpoint": "21.5",
+  "Dorado|Studio D18|occupancy": "116",
+  "Dorado|Studio D18|access": "amber",
+  "Dorado|Studio D18|co2": "1000",
+  "Dorado|fire alarm|maintenance": "Wednesday from 08:00 to 10:00",
+  "Dorado|fire alarm|escalation": "duty engineer",
+  "Dorado|elevator|maintenance": "Saturday from 08:00 to 10:00",
+  "Dorado|elevator|escalation": "IT operations lead",
+  "Dorado|access control|maintenance": "Friday from 07:00 to 09:00",
+  "Dorado|access control|escalation": "IT operations lead",
+  "Equinox|Lab E37|setpoint": "24.0",
+  "Equinox|Lab E37|occupancy": "36",
+  "Equinox|Lab E37|access": "red",
+  "Equinox|Lab E37|co2": "900",
+  "Equinox|Studio E26|setpoint": "21.0",
+  "Equinox|Studio E26|occupancy": "64",
+  "Equinox|Studio E26|access": "green",
+  "Equinox|Studio E26|co2": "900",
+  "Equinox|Hall E13|setpoint": "22.5",
+  "Equinox|Hall E13|occupancy": "120",
+  "Equinox|Hall E13|access": "red",
+  "Equinox|Hall E13|co2": "1000",
+  "Equinox|Lounge E43|setpoint": "21.0",
+  "Equinox|Lounge E43|occupancy": "120",
+  "Equinox|Lounge E43|access": "amber",
+  "Equinox|Lounge E43|co2": "900",
+  "Equinox|lighting|maintenance": "Thursday from 07:00 to 09:00",
+  "Equinox|lighting|escalation": "security desk",
+  "Equinox|access control|maintenance": "Saturday from 08:00 to 10:00",
+  "Equinox|access control|escalation": "security desk",
+  "Equinox|elevator|maintenance": "Thursday from 22:00 to 24:00",
+  "Equinox|elevator|escalation": "IT operations lead",
+  "Fornax|Lounge F14|setpoint": "21.0",
+  "Fornax|Lounge F14|occupancy": "116",
+  "Fornax|Lounge F14|access": "green",
+  "Fornax|Lounge F14|co2": "800",
+  "Fornax|Lab F15|setpoint": "23.5",
+  "Fornax|Lab F15|occupancy": "84",
+  "Fornax|Lab F15|access": "green",
+  "Fornax|Lab F15|co2": "1400",
+  "Fornax|Studio F12|setpoint": "22.5",
+  "Fornax|Studio F12|occupancy": "28",
+  "Fornax|Studio F12|access": "red",
+  "Fornax|Studio F12|co2": "1000",
+  "Fornax|Hall F24|setpoint": "24.0",
+  "Fornax|Hall F24|occupancy": "92",
+  "Fornax|Hall F24|access": "red",
+  "Fornax|Hall F24|co2": "800",
+  "Fornax|HVAC|maintenance": "Saturday from 21:00 to 23:00",
+  "Fornax|HVAC|escalation": "IT operations lead",
+  "Fornax|access control|maintenance": "Thursday from 06:00 to 08:00",
+  "Fornax|access control|escalation": "IT operations lead",
+  "Fornax|lighting|maintenance": "Friday from 08:00 to 10:00",
+  "Fornax|lighting|escalation": "duty engineer"
+ },
+ "people": [
+  {
+   "name": "Lucia Moreau",
+   "email": "lucia.moreau@aurora-campus.example",
+   "phone": "+31 6 6389 9963",
+   "office": "Studio C13, Cygnus"
+  },
+  {
+   "name": "Yara Jansen",
+   "email": "yara.jansen@aurora-campus.example",
+   "phone": "+31 6 6071 4569",
+   "office": "Lab A41, Atlas"
+  },
+  {
+   "name": "Bram Okafor",
+   "email": "bram.okafor@aurora-campus.example",
+   "phone": "+31 6 6494 7252",
+   "office": "Hall A18, Atlas"
+  },
+  {
+   "name": "Amara Bakker",
+   "email": "amara.bakker@aurora-campus.example",
+   "phone": "+31 6 9237 4292",
+   "office": "Lab C15, Cygnus"
+  },
+  {
+   "name": "Daan Silva",
+   "email": "daan.silva@aurora-campus.example",
+   "phone": "+31 6 2488 5328",
+   "office": "Hall A18, Atlas"
+  },
+  {
+   "name": "Amara Okafor",
+   "email": "amara.okafor@aurora-campus.example",
+   "phone": "+31 6 1682 7454",
+   "office": "Lounge D26, Dorado"
+  },
+  {
+   "name": "Tomas Lindqvist",
+   "email": "tomas.lindqvist@aurora-campus.example",
+   "phone": "+31 6 2384 9670",
+   "office": "Lab B47, Borealis"
+  },
+  {
+   "name": "Sanne Lindqvist",
+   "email": "sanne.lindqvist@aurora-campus.example",
+   "phone": "+31 6 7381 6343",
+   "office": "Studio F12, Fornax"
+  },
+  {
+   "name": "Sven Okafor",
+   "email": "sven.okafor@aurora-campus.example",
+   "phone": "+31 6 3371 1717",
+   "office": "Lounge C39, Cygnus"
+  },
+  {
+   "name": "Ruben Mensah",
+   "email": "ruben.mensah@aurora-campus.example",
+   "phone": "+31 6 9282 3282",
+   "office": "Studio F12, Fornax"
+  },
+  {
+   "name": "Lucia Lindqvist",
+   "email": "lucia.lindqvist@aurora-campus.example",
+   "phone": "+31 6 4767 2394",
+   "office": "Hall E13, Equinox"
+  },
+  {
+   "name": "Lucia Verbeek",
+   "email": "lucia.verbeek@aurora-campus.example",
+   "phone": "+31 6 6909 2718",
+   "office": "Lounge B14, Borealis"
+  },
+  {
+   "name": "Nadia Bakker",
+   "email": "nadia.bakker@aurora-campus.example",
+   "phone": "+31 6 1831 1308",
+   "office": "Studio E26, Equinox"
+  },
+  {
+   "name": "Daan Bakker",
+   "email": "daan.bakker@aurora-campus.example",
+   "phone": "+31 6 1054 8486",
+   "office": "Lab C15, Cygnus"
+  },
+  {
+   "name": "Amara Mensah",
+   "email": "amara.mensah@aurora-campus.example",
+   "phone": "+31 6 9768 2506",
+   "office": "Lab E37, Equinox"
+  },
+  {
+   "name": "Sven Moreau",
+   "email": "sven.moreau@aurora-campus.example",
+   "phone": "+31 6 5350 4846",
+   "office": "Studio A19, Atlas"
+  },
+  {
+   "name": "Ines Jansen",
+   "email": "ines.jansen@aurora-campus.example",
+   "phone": "+31 6 8542 9092",
+   "office": "Hall F24, Fornax"
+  },
+  {
+   "name": "Nadia Alvarez",
+   "email": "nadia.alvarez@aurora-campus.example",
+   "phone": "+31 6 5707 1765",
+   "office": "Studio D18, Dorado"
+  },
+  {
+   "name": "Ines Alvarez",
+   "email": "ines.alvarez@aurora-campus.example",
+   "phone": "+31 6 3415 6435",
+   "office": "Lounge E43, Equinox"
+  },
+  {
+   "name": "Priya Lindqvist",
+   "email": "priya.lindqvist@aurora-campus.example",
+   "phone": "+31 6 5987 3186",
+   "office": "Hall F24, Fornax"
+  },
+  {
+   "name": "Lucia Bakker",
+   "email": "lucia.bakker@aurora-campus.example",
+   "phone": "+31 6 8959 5403",
+   "office": "Lab A41, Atlas"
+  },
+  {
+   "name": "Mateo Mensah",
+   "email": "mateo.mensah@aurora-campus.example",
+   "phone": "+31 6 9021 5765",
+   "office": "Studio B17, Borealis"
+  },
+  {
+   "name": "Tomas Bakker",
+   "email": "tomas.bakker@aurora-campus.example",
+   "phone": "+31 6 8640 2941",
+   "office": "Lab D45, Dorado"
+  },
+  {
+   "name": "Ines Moreau",
+   "email": "ines.moreau@aurora-campus.example",
+   "phone": "+31 6 8748 1286",
+   "office": "Studio A19, Atlas"
+  }
+ ]
+}

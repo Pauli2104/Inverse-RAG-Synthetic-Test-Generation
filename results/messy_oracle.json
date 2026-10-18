@@ -1,0 +1,610 @@
+{
+ "p=0.1": {
+  "p": 0.1,
+  "q": 0.5,
+  "seeds": 10,
+  "n_items": 300,
+  "mode_share": {
+   "standard": 0.3736666666666667,
+   "paraphrase": 0.2946666666666667,
+   "relative": 0.09433333333333334,
+   "outdated": 0.2373333333333333
+  },
+  "C0": {
+   "invalid": [
+    0.21500000000000002,
+    0.19166666666666668,
+    0.23733333333333334
+   ],
+   "recall": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_reject": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "review": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "yield": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "false_negatives_by_source": {
+    "corrupt/standard": 113,
+    "stale/outdated": 379,
+    "corrupt/outdated": 40,
+    "corrupt/paraphrase": 85,
+    "corrupt/relative": 28
+   }
+  },
+  "C1": {
+   "invalid": [
+    0.1531126141481375,
+    0.1373469017507367,
+    0.1698330720021992
+   ],
+   "recall": [
+    0.40818998087157776,
+    0.36957576026336403,
+    0.45042019748415646
+   ],
+   "false_reject": [
+    0.10837090622540486,
+    0.09440959493779108,
+    0.12255257162137302
+   ],
+   "review": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "yield": [
+    0.8263333333333331,
+    0.8066666666666666,
+    0.8470083333333333
+   ],
+   "false_negatives_by_source": {
+    "stale/outdated": 379
+   }
+  },
+  "C2": {
+   "invalid": [
+    0.22579135615498108,
+    0.20331088095173167,
+    0.24808765084511233
+   ],
+   "recall": [
+    0.40818998087157776,
+    0.36957576026336403,
+    0.45042019748415646
+   ],
+   "false_reject": [
+    0.44737257776848754,
+    0.4275752396623432,
+    0.4726074834624674
+   ],
+   "review": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "yield": [
+    0.56,
+    0.5379916666666668,
+    0.5793333333333333
+   ],
+   "false_negatives_by_source": {
+    "stale/outdated": 379
+   }
+  },
+  "C3": {
+   "invalid": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "recall": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "false_reject": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "review": [
+    0.4073333333333333,
+    0.388,
+    0.43166666666666664
+   ],
+   "yield": [
+    0.4336666666666666,
+    0.4126666666666667,
+    0.45633333333333337
+   ],
+   "false_negatives_by_source": {}
+  },
+  "valid_item_decisions_by_mode": {
+   "C1": {
+    "relative": {
+     "accept": 0.0,
+     "reject": 1.0,
+     "review": 0.0
+    },
+    "outdated": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "standard": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "paraphrase": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    }
+   },
+   "C2": {
+    "relative": {
+     "accept": 0.0,
+     "reject": 1.0,
+     "review": 0.0
+    },
+    "outdated": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "standard": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "paraphrase": {
+     "accept": 0.0,
+     "reject": 1.0,
+     "review": 0.0
+    }
+   },
+   "C3": {
+    "relative": {
+     "accept": 0.0,
+     "reject": 0.0,
+     "review": 1.0
+    },
+    "outdated": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "standard": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "paraphrase": {
+     "accept": 0.0,
+     "reject": 0.0,
+     "review": 1.0
+    }
+   }
+  }
+ },
+ "p=0.2": {
+  "p": 0.2,
+  "q": 0.5,
+  "seeds": 10,
+  "n_items": 300,
+  "mode_share": {
+   "standard": 0.376,
+   "paraphrase": 0.2906666666666667,
+   "relative": 0.09266666666666667,
+   "outdated": 0.24066666666666667
+  },
+  "C0": {
+   "invalid": [
+    0.304,
+    0.28566666666666674,
+    0.32267499999999993
+   ],
+   "recall": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_reject": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "review": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "yield": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "false_negatives_by_source": {
+    "corrupt/standard": 229,
+    "stale/outdated": 388,
+    "corrupt/paraphrase": 173,
+    "corrupt/outdated": 65,
+    "corrupt/relative": 57
+   }
+  },
+  "C1": {
+   "invalid": [
+    0.17221381032308652,
+    0.15524367156231625,
+    0.1888840866925872
+   ],
+   "recall": [
+    0.5728396597516827,
+    0.5386317450495555,
+    0.6139985865836977
+   ],
+   "false_reject": [
+    0.10589376317276111,
+    0.09258149999832191,
+    0.11875245354945783
+   ],
+   "review": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "yield": [
+    0.752,
+    0.7316583333333333,
+    0.7726666666666666
+   ],
+   "false_negatives_by_source": {
+    "stale/outdated": 388,
+    "corrupt/paraphrase": 1
+   }
+  },
+  "C2": {
+   "invalid": [
+    0.24966266266564657,
+    0.22450056762659187,
+    0.2734802970566316
+   ],
+   "recall": [
+    0.5741383610503841,
+    0.5413062549248874,
+    0.614479931309773
+   ],
+   "false_reject": [
+    0.44050489911463664,
+    0.41539757489117246,
+    0.47212470146673174
+   ],
+   "review": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "yield": [
+    0.5186666666666666,
+    0.49366666666666675,
+    0.5389999999999999
+   ],
+   "false_negatives_by_source": {
+    "stale/outdated": 388
+   }
+  },
+  "C3": {
+   "invalid": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "recall": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "false_reject": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "review": [
+    0.4096666666666667,
+    0.39,
+    0.43533333333333335
+   ],
+   "yield": [
+    0.3893333333333333,
+    0.3666666666666667,
+    0.4109999999999999
+   ],
+   "false_negatives_by_source": {}
+  },
+  "valid_item_decisions_by_mode": {
+   "C1": {
+    "relative": {
+     "accept": 0.0,
+     "reject": 1.0,
+     "review": 0.0
+    },
+    "outdated": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "standard": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "paraphrase": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    }
+   },
+   "C2": {
+    "relative": {
+     "accept": 0.0,
+     "reject": 1.0,
+     "review": 0.0
+    },
+    "outdated": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "standard": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "paraphrase": {
+     "accept": 0.0,
+     "reject": 1.0,
+     "review": 0.0
+    }
+   },
+   "C3": {
+    "relative": {
+     "accept": 0.0,
+     "reject": 0.0,
+     "review": 1.0
+    },
+    "outdated": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "standard": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "paraphrase": {
+     "accept": 0.0,
+     "reject": 0.0,
+     "review": 1.0
+    }
+   }
+  }
+ },
+ "p=0.3": {
+  "p": 0.3,
+  "q": 0.5,
+  "seeds": 10,
+  "n_items": 300,
+  "mode_share": {
+   "standard": 0.372,
+   "paraphrase": 0.29500000000000004,
+   "relative": 0.095,
+   "outdated": 0.238
+  },
+  "C0": {
+   "invalid": [
+    0.38533333333333336,
+    0.36933333333333335,
+    0.40166666666666667
+   ],
+   "recall": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "false_reject": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "review": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "yield": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "false_negatives_by_source": {
+    "corrupt/standard": 342,
+    "stale/outdated": 385,
+    "corrupt/paraphrase": 249,
+    "corrupt/outdated": 95,
+    "corrupt/relative": 85
+   }
+  },
+  "C1": {
+   "invalid": [
+    0.1898226527088128,
+    0.17067251979942252,
+    0.20881255346405414
+   ],
+   "recall": [
+    0.667103203833156,
+    0.6418657265971149,
+    0.6979747752869765
+   ],
+   "false_reject": [
+    0.1083734012693434,
+    0.09178564050820039,
+    0.1246158001257726
+   ],
+   "review": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "yield": [
+    0.6766666666666667,
+    0.6576666666666667,
+    0.6946666666666665
+   ],
+   "false_negatives_by_source": {
+    "stale/outdated": 385,
+    "corrupt/standard": 1
+   }
+  },
+  "C2": {
+   "invalid": [
+    0.276969816283763,
+    0.24759667326828508,
+    0.3046655539611746
+   ],
+   "recall": [
+    0.668012294742247,
+    0.6423939667177818,
+    0.698940290038724
+   ],
+   "false_reject": [
+    0.45274067235435983,
+    0.41930579176747146,
+    0.49309201590917917
+   ],
+   "review": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "yield": [
+    0.46433333333333326,
+    0.4373333333333333,
+    0.48699999999999993
+   ],
+   "false_negatives_by_source": {
+    "stale/outdated": 385
+   }
+  },
+  "C3": {
+   "invalid": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "recall": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "false_reject": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "review": [
+    0.42066666666666663,
+    0.39866666666666667,
+    0.44800000000000006
+   ],
+   "yield": [
+    0.33599999999999997,
+    0.31166666666666665,
+    0.35899999999999993
+   ],
+   "false_negatives_by_source": {}
+  },
+  "valid_item_decisions_by_mode": {
+   "C1": {
+    "relative": {
+     "accept": 0.0,
+     "reject": 1.0,
+     "review": 0.0
+    },
+    "outdated": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "standard": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "paraphrase": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    }
+   },
+   "C2": {
+    "relative": {
+     "accept": 0.0,
+     "reject": 1.0,
+     "review": 0.0
+    },
+    "outdated": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "standard": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "paraphrase": {
+     "accept": 0.0,
+     "reject": 1.0,
+     "review": 0.0
+    }
+   },
+   "C3": {
+    "relative": {
+     "accept": 0.0,
+     "reject": 0.0,
+     "review": 1.0
+    },
+    "outdated": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "standard": {
+     "accept": 1.0,
+     "reject": 0.0,
+     "review": 0.0
+    },
+    "paraphrase": {
+     "accept": 0.0,
+     "reject": 0.0,
+     "review": 1.0
+    }
+   }
+  }
+ }
+}

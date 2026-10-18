@@ -1,0 +1,10 @@
+# promptfoo: run the synthetic suite against the campus agent (reference or a mutant)
+#   npx promptfoo@latest eval -c frameworks/promptfooconfig.yaml
+#   SDG_MUTANT=M06_guard_no_decode npx promptfoo@latest eval -c frameworks/promptfooconfig.yaml
+description: SDG suite for the campus operations agent
+prompts:
+  - "{{query}}"
+providers:
+  - id: file://promptfoo_provider.py
+    label: campus-agent
+tests: file://../export/promptfoo/tests.yaml
